@@ -4,8 +4,8 @@
 {% endblock %}
 {% block content %}
   <div class="container py-5">
-  <h1>  Посты категории {{ category }}</h1>
-  {% for post in posts %}
+  <h1>  Посты категории - {{ category }}</h1>
+  {% comment %} {% for post in posts %}
     <article>
       <h2>{{ post.location }}</h2>
       <p>{{ post.date }}</p>
@@ -14,7 +14,7 @@
     <hr>
   {% empty %}
     <p>Нет постов в этой категории.</p>
-  {% endfor %}
+  {% endfor %} {% endcomment %}
 {% endblock %}
 
 

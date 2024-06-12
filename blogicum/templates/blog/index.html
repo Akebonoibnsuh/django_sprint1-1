@@ -4,8 +4,8 @@
 {% endblock %}
 {% block content %}
   <h1 class="pb-2 mb-0">Лента записей</h1>
+  {% for post in posts reversed %}
   <hr>
-  {% for post in posts %}
   <article>
     <ul>
       <li>
